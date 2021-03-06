@@ -1,8 +1,8 @@
 ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-RegisterServerEvent('utx-burger:etver')
-AddEventHandler('utx-burger:etver', function()
+RegisterServerEvent('bros-burger:etver')
+AddEventHandler('bros-burger:etver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('burgereti', 1) then
@@ -12,8 +12,8 @@ AddEventHandler('utx-burger:etver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:tavukkoftever')
-AddEventHandler('utx-burger:tavukkoftever', function()
+RegisterServerEvent('bros-burger:tavukkoftever')
+AddEventHandler('bros-burger:tavukkoftever', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('tavukkofte', 1) then
@@ -23,8 +23,8 @@ AddEventHandler('utx-burger:tavukkoftever', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:patatesver')
-AddEventHandler('utx-burger:patatesver', function()
+RegisterServerEvent('bros-burger:patatesver')
+AddEventHandler('bros-burger:patatesver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('patates', 1) then
@@ -34,8 +34,8 @@ AddEventHandler('utx-burger:patatesver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:ekmekver')
-AddEventHandler('utx-burger:ekmekver', function()
+RegisterServerEvent('bros-burger:ekmekver')
+AddEventHandler('bros-burger:ekmekver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('burgerekmegi', 1) then
@@ -45,8 +45,8 @@ AddEventHandler('utx-burger:ekmekver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:ketcapver')
-AddEventHandler('utx-burger:ketcapver', function()
+RegisterServerEvent('bros-burger:ketcapver')
+AddEventHandler('bros-burger:ketcapver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('ketcap', 1) then
@@ -56,8 +56,8 @@ AddEventHandler('utx-burger:ketcapver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:mayonezver')
-AddEventHandler('utx-burger:mayonezver', function()
+RegisterServerEvent('bros-burger:mayonezver')
+AddEventHandler('bros-burger:mayonezver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('mayonez', 1) then
@@ -67,8 +67,8 @@ AddEventHandler('utx-burger:mayonezver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:marulver')
-AddEventHandler('utx-burger:marulver', function()
+RegisterServerEvent('bros-burger:marulver')
+AddEventHandler('bros-burger:marulver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('marul', 1) then
@@ -78,8 +78,8 @@ AddEventHandler('utx-burger:marulver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:chedarver')
-AddEventHandler('utx-burger:chedarver', function()
+RegisterServerEvent('bros-burger:chedarver')
+AddEventHandler('bros-burger:chedarver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('chedar', 1) then
@@ -89,8 +89,8 @@ AddEventHandler('utx-burger:chedarver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:susamlıekmekver')
-AddEventHandler('utx-burger:susamlıekmekver', function()
+RegisterServerEvent('bros-burger:susamlıekmekver')
+AddEventHandler('bros-burger:susamlıekmekver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.canCarryItem('susamlıekmek', 1) then
@@ -100,8 +100,8 @@ AddEventHandler('utx-burger:susamlıekmekver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:burgerver')
-AddEventHandler('utx-burger:burgerver', function()
+RegisterServerEvent('bros-burger:burgerver')
+AddEventHandler('bros-burger:burgerver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.getInventoryItem('burgereti').count >= 1 then
@@ -127,8 +127,8 @@ AddEventHandler('utx-burger:burgerver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:tavukver')
-AddEventHandler('utx-burger:tavukver', function()
+RegisterServerEvent('bros-burger:tavukver')
+AddEventHandler('bros-burger:tavukver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.getInventoryItem('tavukkofte').count >= 1 then
@@ -154,8 +154,8 @@ AddEventHandler('utx-burger:tavukver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:paketver')
-AddEventHandler('utx-burger:paketver', function()
+RegisterServerEvent('bros-burger:paketver')
+AddEventHandler('bros-burger:paketver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.getInventoryItem('hamburger').count >= 1 then
@@ -169,8 +169,8 @@ AddEventHandler('utx-burger:paketver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:tavukpaketver')
-AddEventHandler('utx-burger:paketver', function()
+RegisterServerEvent('bros-burger:tavukpaketver')
+AddEventHandler('bros-burger:paketver', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     if xPlayer.getInventoryItem('fowlburger').count >= 1 then
@@ -184,8 +184,8 @@ AddEventHandler('utx-burger:paketver', function()
     end
 end)
 
-RegisterServerEvent('utx-burger:burgersat')
-AddEventHandler('utx-burger:burgersat', function()
+RegisterServerEvent('bros-burger:burgersat')
+AddEventHandler('bros-burger:burgersat', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     local money = math.random(Config.MinParaMiktar, Config.MaxParaMiktar)
@@ -196,7 +196,7 @@ AddEventHandler('utx-burger:burgersat', function()
     end
 end)
 
-ESX.RegisterServerCallback('utx-burger:malzemekontrol', function(source, cb, item, gereklisayi)
+ESX.RegisterServerCallback('bros-burger:malzemekontrol', function(source, cb, item, gereklisayi)
 	local xPlayer = ESX.GetPlayerFromId(source)
     local itemcount = xPlayer.getInventoryItem(item).count
     local itemname = xPlayer.getInventoryItem(item).label
@@ -208,15 +208,15 @@ ESX.RegisterServerCallback('utx-burger:malzemekontrol', function(source, cb, ite
 	end
 end)
 
-RegisterServerEvent('utx-jobveh:takemoney')
-AddEventHandler('utx-jobveh:takemoney', function()
+RegisterServerEvent('bros-jobveh:takemoney')
+AddEventHandler('bros-jobveh:takemoney', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     xPlayer.removeAccountMoney('bank', 2500)
     TriggerClientEvent('esx:showNotification', src, 'Depozito olarak banka hesabınızdan 2500$ kesildi!')
 end)
 
-ESX.RegisterServerCallback("utx-jobveh:givemoney", function(source, cb, verilecekpara)
+ESX.RegisterServerCallback("bros-jobveh:givemoney", function(source, cb, verilecekpara)
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     xPlayer.addAccountMoney('bank', verilecekpara)
