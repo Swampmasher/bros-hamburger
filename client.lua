@@ -176,7 +176,7 @@ function AracCikart()
 				aracalindi = true
 				TaskWarpPedIntoVehicle(player, vehicle, -1)
 			end)
-			TriggerServerEvent('utx-jobveh:takemoney')
+			TriggerServerEvent('bros-jobveh:takemoney')
 		else
 			ESX.ShowNotification('Zaten araç almışsınız!')
 		end
@@ -197,7 +197,7 @@ function AracSil()
 				if model == -1776615689 then
             		DeleteVehicle(vehicle)
             		aracalindi = false
-					ESX.TriggerServerCallback("utx-jobveh:givemoney", function(CB)
+					ESX.TriggerServerCallback("bros-jobveh:givemoney", function(CB)
 						if CB then
 						  ESX.ShowNotification('Depozito olarak alınan 2500$ banka hesabınıza iade edildi!')
 						end
@@ -333,7 +333,7 @@ function Patates()
             },
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent('utx-burger:patatesver')
+                TriggerServerEvent('bros-burger:patatesver')
                 malzemealiyormu = false
                 ESX.ShowNotification('Patates Pişirdin!')
              else
@@ -344,8 +344,8 @@ function Patates()
 end
 
 
-RegisterNetEvent('utx-burger:koftepisir')
-AddEventHandler('utx-burger:koftepisir', function()
+RegisterNetEvent('bros-burger:koftepisir')
+AddEventHandler('bros-burger:koftepisir', function()
     if not pisiriyormu then
         pisiriyormu = true
         local player = PlayerPedId()
@@ -368,7 +368,7 @@ AddEventHandler('utx-burger:koftepisir', function()
                     ClearPedTasksImmediately(player)
                     ESX.ShowNotification('Eti pişiremedin!')
                 else
-                    TriggerServerEvent('utx-burger:etver')
+                    TriggerServerEvent('bros-burger:etver')
                     pisiriyormu = false
                     ClearPedTasksImmediately(player)
                     ESX.ShowNotification('Eti başarıyla pişirdin!')
@@ -378,8 +378,8 @@ AddEventHandler('utx-burger:koftepisir', function()
     end
 end)
 
-RegisterNetEvent('utx-burger:tavukkoftepisir')
-AddEventHandler('utx-burger:tavukkoftepisir', function()
+RegisterNetEvent('bros-burger:tavukkoftepisir')
+AddEventHandler('bros-burger:tavukkoftepisir', function()
     if not pisiriyormu then
         pisiriyormu = true
         local player = PlayerPedId()
@@ -402,7 +402,7 @@ AddEventHandler('utx-burger:tavukkoftepisir', function()
                     ClearPedTasksImmediately(player)
                     ESX.ShowNotification('Eti pişiremedin!')
                 else
-                    TriggerServerEvent('utx-burger:tavukkoftever')
+                    TriggerServerEvent('bros-burger:tavukkoftever')
                     pisiriyormu = false
                     ClearPedTasksImmediately(player)
                     ESX.ShowNotification('Eti başarıyla pişirdin!')
@@ -414,7 +414,7 @@ end)
 
 function BurgerSat()
     if not satiyormu then
-        ESX.TriggerServerCallback('utx-burger:malzemekontrol', function(data)
+        ESX.TriggerServerCallback('bros-burger:malzemekontrol', function(data)
             local random = math.random(1,#locations)
 	        satisblip = true
 	        satiskordinat = {
@@ -475,7 +475,7 @@ function BurgeryuSat()
         },
     }, function(cancelled)
         if not cancelled then
-            TriggerServerEvent('utx-burger:burgersat')
+            TriggerServerEvent('bros-burger:burgersat')
             satiskordinat = false
             satiyormu = false
             ESX.ShowNotification('Başarıyla burger sattın!')
@@ -522,7 +522,7 @@ function burgermenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:burgerver")
+                TriggerServerEvent("bros-burger:burgerver")
             end
         end)
     elseif data.current.value == 'dburger' then
@@ -547,7 +547,7 @@ function burgermenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:tavukver")
+                TriggerServerEvent("bros-burger:tavukver")
             end
         end)
 	end
@@ -598,7 +598,7 @@ function pisirmenu()
                 }
             }, function(cancelled)
                 if not cancelled then
-                    TriggerEvent("utx-burger:koftepisir")
+                    TriggerEvent("bros-burger:koftepisir")
                 end
             end)
         elseif data.current.value == 'tavukofte' then
@@ -623,7 +623,7 @@ function pisirmenu()
                 }
             }, function(cancelled)
                 if not cancelled then
-                    TriggerEvent("utx-burger:tavukkoftepisir")
+                    TriggerEvent("bros-burger:tavukkoftepisir")
                 end
             end)
         end
@@ -678,7 +678,7 @@ function malzememenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:ekmekver")
+                TriggerServerEvent("bros-burger:ekmekver")
             end
         end)
     elseif data.current.value == 'ketcap' then
@@ -703,7 +703,7 @@ function malzememenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:ketcapver")
+                TriggerServerEvent("bros-burger:ketcapver")
             end
         end)
     elseif data.current.value == 'mayonez' then
@@ -728,7 +728,7 @@ function malzememenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:mayonezver")
+                TriggerServerEvent("bros-burger:mayonezver")
             end
         end)
     elseif data.current.value == 'susamlıekmek' then
@@ -753,7 +753,7 @@ function malzememenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:susamlıekmekver")
+                TriggerServerEvent("bros-burger:susamlıekmekver")
             end
         end)
     elseif data.current.value == 'marul' then
@@ -778,7 +778,7 @@ function malzememenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:marulver")
+                TriggerServerEvent("bros-burger:marulver")
             end
         end)
     elseif data.current.value == 'chedar' then
@@ -803,7 +803,7 @@ function malzememenu()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:chedarver")
+                TriggerServerEvent("bros-burger:chedarver")
             end
         end)
 	end
@@ -854,7 +854,7 @@ function BurgerPaketle()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:paketver")
+                TriggerServerEvent("bros-burger:paketver")
             end
         end)
     elseif data.current.value == 'tavukburger' then
@@ -879,7 +879,7 @@ function BurgerPaketle()
             }
         }, function(cancelled)
             if not cancelled then
-                TriggerServerEvent("utx-burger:tavukpaketver")
+                TriggerServerEvent("bros-burger:tavukpaketver")
             end
         end)
 	end
