@@ -1,7 +1,7 @@
 # bros-hamburger
 Sorunsuz Hobi Hamburger Mesleği
 
-Tanıtım Videosu: https://streamable.com/2tc914
+Tanıtım Videosu: https://youtu.be/cxtXuolH6eQ
 
 Açıklama:
 - Hamburger ve Tavuk Hamburger Yapabilrisiniz.
