@@ -1,22 +1,20 @@
 # bros-hamburger
-Sorunsuz Hobi Hamburger Mesleği
 
-Tanıtım Videosu: https://youtu.be/cxtXuolH6eQ
+Preview:  https://youtu.be/cxtXuolH6eQ
 
-Açıklama:
-- Hamburger ve Tavuk Hamburger Yapabilrisiniz.
-- Patates pişirebilirsiniz.
-- İsteğe bağlı hamburger eklenebilir daha
-- Boştayken 0.01 ms yer.
+Description:
+- You Can Make Hamburger and Chicken Hamburger.
+- You can cook potatoes.
+- Optional hamburger can be added more
+- You can rent a car
+- There is no need for a whitelist jobs, anyone can go directly
 
-Çalışması İçin Scriptler:
+Requirements:
 - https://github.com/ONyambura/mythic_progbar
 - https://github.com/Utinax/reload-skillbar
 
-Burger Shot Mapi:
+Burger Shot Map:
 - https://dosya.co/68bqi8jzkbsa/Burgershot.rar.html
 
-Burger Shot Arabası:
+Burger Shot Car:
 - https://dosya.co/yvp79ezsklxj/burger_(1).rar.html
-
-Discord Sunucum:  https://discord.gg/YUf3Pm4
